@@ -4,10 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+/* 
+        .seçao1{
+            width: 100%;
+            height: 55px;
+            background-color: #625959;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .botoes-topicos{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: #FFFBFB;
+         } */
+
+        section {
+        padding: 80px 20px;
+        }
+
+        header {
+    background: #FFFBFB;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+        .seçao4{
+            background: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        }
+
+        .projeto-1{
+            background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+        }
+
+        .projeto-1 img {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .botoes-projeto {
+            display: flex;
+            gap: 10px;
+        }
+
+        .botoesindividuais {
+            background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+        }
+
+        .descricao {
+    
+    width: 50%;
+    text-align: left;
+}
+    </style>
 </head>
 <body>
-    <img src="./assets/fotper.png" alt="foto caio" style="height: 300px;">
-    <h1>Caio vitor</h1>
-    <h3>Portfolio de projetos</h3>
+   
+    <!-- <h1>Caio vitor</h1>
+    <h3>Portfolio de projetos</h3> -->
+    <section class="seçao1">
+        <!-- <label for="topi1">topico1</label>
+        <input type="text" id="topi1">
+
+        <label for="topi2">topico2</label>
+        <input type="text" id="topi2">
+
+        <label for="topi3">topico3</label>
+        <input type="text" id="topi3"> -->
+        <!-- <div class="botoes-topicos">
+            <button onclick="">topico1</button>
+            <button onclick="">topico2</button>
+            <button onclick="">topico3</button>
+        </div> -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#Sobre">Sobre mim</a></li>
+                    <li><a href="#ProjetosA">Projetos acadêmicos</a></li>
+                    <li><a href="#ProjetosP">Projetos Pessoais</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <section class="seçao2">
+        <h1>Caio Vitor Dias</h1>
+        <h2>Desenvolvedor FullStack</h2>
+    </section>
+    <section id="Sobre" class="seçao3">
+        <h1>Sobre mim</h1>
+        <img src="./assets/fotper.png" alt="foto caio" style="height: 300px;">
+        <p>Texto</p>
+    </section>
+    <section id="ProjetosA" class="seçao4">
+        <h1>Projetos Acadêmicos</h1>
+        <div class="projeto-1">
+            <img src="./assets/imagemprojeto1.png" alt="foto caio" style="height: 300px;">
+            <div class="botoes-projeto">
+                <button class="botoesindividuais"><a>Repositório</a></button>
+                <button class="botoesindividuais" onclick="mostrarDescricao(1)">Descrição</button>
+            </div>
+            <p id="projeto-1" class="descricao">Projeto análise de dados eleitorais</p>
+            <p id="projeto-2" class="descricao">O objetivo deste projeto era proporcionar ao cliente um site de análise de dados com a exibição de estatísticas do eleitorado localizado dentro de sua cobertura no Estado de São Paulo, podendo obter diversas características, como gráficos e tabelas de estado civil, escolaridade e faixa etária, além de informações sobre renda e evolução na quantidade de eleitores, tanto no âmbito municipal (de cada cidade) quanto macro-regiões, como o Vale do Paraíba.</p>
+            <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram em relação ao planejamento do escopo, design de alguns wireframes e principalmente na criação de algumas filtragens de dados utilizando a lib pandas.</p>
+        </div>
+    </section>
+    <section id="ProjetosP" class="seçao5">
+        <h1>Projetos Pessoais</h1>
+    </section>
+
+    <section id="Contato" class="seçao6">
+        <h3>Contato</h3>
+    </section>
+
+    <!-- <script>
+        function mostrarDescricao(id) {
+            let descricao = document.getElementById("projeto-" + id);
+            if (descricao.style.display === "block") {
+                descricao.style.display = "none";
+            } else {
+                descricao.style.display = "block";
+            }
+        }
+    </script> -->
 </body>
 </html>
