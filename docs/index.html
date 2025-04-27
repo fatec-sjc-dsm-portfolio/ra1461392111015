@@ -27,6 +27,12 @@
         padding: 80px 20px;
         }
 
+        .imagemper {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+
         header {
     background: #FFFBFB;
     padding: 15px 0;
@@ -60,24 +66,117 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.seçao2{
+            
+            padding: 40px;
+            text-align: left;
+            
+        }
+        .seçao2 h1{
+           margin-bottom: 100px;
+            
+        }
+
         .seçao4{
             background: #ddd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+            padding: 40px;
+            text-align: center;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
         }
+
+        .seçao4 h1 {
+            margin-bottom: 30px;
+        }
+
+        .esqprojacad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dirprojacad {
+            width: 600px;
+        }
+
+        .dirprojacad p {
+            width: 100%;
+        }
+
+        .caroselcont {
+            position: static;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .caroselslide {
+            display: none;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .caroselslide.active {
+            display: block;
+        }
+
+        .caroselcontrols {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .caroselcontrols button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .seçao3{
+            height: 600px;
+            background: #ddd;
+            text-align: center;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+        }
+
+        .seçao3 h1 {
+            margin-bottom: 30px;
+        }
+
+        .espaçoimagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 300px;
+        }
+
+        .espaçotexto {
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            background-color: #f9f9f9;
+        }
+
 
         .projeto-1{
             background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
         }
 
         .projeto-1 img {
@@ -89,44 +188,30 @@ nav ul li a:hover {
         .botoes-projeto {
             display: flex;
             gap: 10px;
+            margin-top: 10px;
         }
 
         .botoesindividuais {
             background: #333;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
         .descricao {
-    
-    width: 50%;
-    text-align: left;
+            width: 50%;
+            text-align: left;
 }
     </style>
 </head>
 <body>
    
-    <!-- <h1>Caio vitor</h1>
-    <h3>Portfolio de projetos</h3> -->
     <section class="seçao1">
-        <!-- <label for="topi1">topico1</label>
-        <input type="text" id="topi1">
-
-        <label for="topi2">topico2</label>
-        <input type="text" id="topi2">
-
-        <label for="topi3">topico3</label>
-        <input type="text" id="topi3"> -->
-        <!-- <div class="botoes-topicos">
-            <button onclick="">topico1</button>
-            <button onclick="">topico2</button>
-            <button onclick="">topico3</button>
-        </div> -->
+        
         <header>
             <nav>
                 <ul>
@@ -144,20 +229,56 @@ nav ul li a:hover {
     </section>
     <section id="Sobre" class="seçao3">
         <h1>Sobre mim</h1>
-        <img src="./assets/fotper.png" alt="foto caio" style="height: 300px;">
-        <p>Texto</p>
+        <div class="espaçoimagem">
+            <img src="./assets/fotper.png" alt="foto caio" class="imagemper">
+            <div class="espaçotexto">
+                <p>Sou desenvolvedor com interesse principalmente no backend. Iniciei na área em 2021 e desde então tenho participado de projetos que envolvem as mais diversas tecnologias e escopos, atuando tanto no backend quanto no frontend, bem como, no planejamento de projetos, gerenciamento de equipes e na comunicação direta com os clientes.</p>
+                <p>Gosto de me aprofundar em temas relacionados a planejamento de projetos e segurança da informação. Sou fluente em inglês e espanhol, e nível básico em francês.</p>
+            </div>
+        </div>
     </section>
     <section id="ProjetosA" class="seçao4">
         <h1>Projetos Acadêmicos</h1>
-        <div class="projeto-1">
-            <img src="./assets/imagemprojeto1.png" alt="foto caio" style="height: 300px;">
-            <div class="botoes-projeto">
-                <button class="botoesindividuais"><a>Repositório</a></button>
-                <button class="botoesindividuais" onclick="mostrarDescricao(1)">Descrição</button>
+        <div class="caroselcont">
+            <div class="caroselslide active">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto1.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/Equipe-01-DSM-2021/projeto-integrador-2021-1" style="text-decoration: none;">Repositório</a></button>
+                            <!-- <button class="botoesindividuais" onclick="mostrarDescricao(1)">Descrição</button> -->
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto análise de dados eleitorais</p>
+                        <p id="projeto-2" class="descricao">O objetivo deste projeto era proporcionar ao cliente um site de análise de dados com a exibição de estatísticas do eleitorado localizado dentro de sua cobertura no Estado de São Paulo, podendo obter diversas características, como gráficos e tabelas de estado civil, escolaridade e faixa etária, além de informações sobre renda e evolução na quantidade de eleitores, tanto no âmbito municipal (de cada cidade) quanto macro-regiões, como o Vale do Paraíba.</p>
+                        <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram em relação ao planejamento do escopo, design de alguns wireframes e principalmente na criação de algumas filtragens de dados utilizando a lib pandas.</p>
+                    </div>
+                </div>
             </div>
-            <p id="projeto-1" class="descricao">Projeto análise de dados eleitorais</p>
-            <p id="projeto-2" class="descricao">O objetivo deste projeto era proporcionar ao cliente um site de análise de dados com a exibição de estatísticas do eleitorado localizado dentro de sua cobertura no Estado de São Paulo, podendo obter diversas características, como gráficos e tabelas de estado civil, escolaridade e faixa etária, além de informações sobre renda e evolução na quantidade de eleitores, tanto no âmbito municipal (de cada cidade) quanto macro-regiões, como o Vale do Paraíba.</p>
-            <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram em relação ao planejamento do escopo, design de alguns wireframes e principalmente na criação de algumas filtragens de dados utilizando a lib pandas.</p>
+            <div class="caroselslide">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto análise de imagens satélite</p>
+                        <p id="projeto-2" class="descricao">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
+                        <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caroselcontrols">
+                <button id="prevBtn">Anterior</button>
+                <button id="nextBtn">Próximo</button>
+              </div>
         </div>
     </section>
     <section id="ProjetosP" class="seçao5">
@@ -178,5 +299,31 @@ nav ul li a:hover {
             }
         }
     </script> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.caroselslide');
+        let currentSlide = 0;
+
+        const showSlide = (index) => {
+            slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+            });
+        };
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        // Exibir o primeiro slide ao carregar a página
+        showSlide(currentSlide);
+        });
+    </script>
 </body>
 </html>
