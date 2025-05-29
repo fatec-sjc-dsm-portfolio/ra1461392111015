@@ -3,81 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-/* 
-        .seçao1{
-            width: 100%;
-            height: 55px;
-            background-color: #625959;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
 
-        .botoes-topicos{
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 10px;
-            background-color: #FFFBFB;
-         } */
-
-        section {
+        /* TUDO */
+    section {
         padding: 80px 20px;
+    }
+
+    body {
+        background-image: url(./assets/imagemfundo\(7\).png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header {
+        background: #FFFBFB;
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    h1, h2 {
+        font-family: 'Alegreya Sans';
+    }
+
+    p {
+        font-family: 'Alegreya Sans';
+        font-size: 20px;
+    }
+
+    button {
+        font-family: 'Alegreya Sans';
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+        /* SEÇÃO 1 */
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+            
         }
 
-        header {
-    background: #FFFBFB;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
+        nav ul li {
+            display: inline;
+        }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    gap: 20px;
-    
-}
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            font-family: 'Alegreya Sans';
+        }
 
-nav ul li {
-    display: inline;
-}
+        nav ul li a:hover {
+            background: #0CA3D5;
+            border-radius: 5px;
+        }
 
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-}
+        /* SEÇÃO 2 */
 
-nav ul li a:hover {
-    background: #555;
-    border-radius: 5px;
-}
+        .seçao2{
+            height: 300px;
+            padding: 40px;
+            text-align: left;
+            padding-top: 100px;
+        }
+        .seçao2 h1{
+         
+            margin-bottom: 100px;
+            font-size: 40px;
+            margin-left: 200px;
+        }
+
+        .seçao2 h2 {
+            font-size: 40px;
+            margin-left: 150px;
+        }
+
+
+        /* SEÇÃO 3  */
+
+        .seçao3{
+            margin-top: 50px;
+            height: 600px;
+            text-align: center;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+        }
+
+        .seçao3 h1 {
+            margin-bottom: 30px;
+        }
+
+        .imagemper {
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+        }
+
+        .espaçoimagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 300px;
+            margin-top: 100px;
+           
+        }
+
+        .espaçotexto {
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 720px;
+            text-align: left;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        /* SEÇÃO 4 */
 
         .seçao4{
-            background: #ddd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+            
+            padding: 40px;
+            text-align: center;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
         }
+
+        .seçao4 h1 {
+            margin-bottom: 30px;
+        }
+
+        .esqprojacad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dirprojacad {
+            width: 600px;
+        }
+
+        .dirprojacad p {
+            width: 100%;
+        }
+
+        .caroselcont {
+            position: static;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .caroselslide {
+            display: none;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .caroselslide.active {
+            display: block;
+        }
+
+        .caroselcontrols {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .caroselcontrols button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+        }
+
+        
+
 
         .projeto-1{
             background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
         }
 
         .projeto-1 img {
@@ -89,44 +222,141 @@ nav ul li a:hover {
         .botoes-projeto {
             display: flex;
             gap: 10px;
+            margin-top: 10px;
         }
 
         .botoesindividuais {
             background: #333;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
         .descricao {
-    
-    width: 50%;
-    text-align: left;
-}
+            width: 50%;
+            text-align: left;
+        }
+
+        /* SEÇÃO 5 */
+
+        .seçao5 {
+            height: 600px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .projeto-2{
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .projeto-2 img {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+                .esqprojacad2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dirprojacad2 {
+            width: 600px;
+        }
+
+        .dirprojacad2 p {
+            width: 100%;
+        }
+
+        .caroselcont2 {
+            position: static;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .caroselslide2 {
+            display: none;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .caroselslide2.active {
+            display: block;
+        }
+
+        .caroselcontrols2 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .caroselcontrols2 button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .botoes-projeto2 {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .botoesindividuais2 {
+            background: #333;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .descricao2 {
+            width: 50%;
+            text-align: left;
+        }
+
+        /* SEÇÃO 6 */
+
+        .seçao6{
+            height: 600px;
+            padding: 40px;
+            text-align: center;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+        }
+
+        
+
+ 
     </style>
 </head>
 <body>
    
-    <!-- <h1>Caio vitor</h1>
-    <h3>Portfolio de projetos</h3> -->
     <section class="seçao1">
-        <!-- <label for="topi1">topico1</label>
-        <input type="text" id="topi1">
-
-        <label for="topi2">topico2</label>
-        <input type="text" id="topi2">
-
-        <label for="topi3">topico3</label>
-        <input type="text" id="topi3"> -->
-        <!-- <div class="botoes-topicos">
-            <button onclick="">topico1</button>
-            <button onclick="">topico2</button>
-            <button onclick="">topico3</button>
-        </div> -->
+        
         <header>
             <nav>
                 <ul>
@@ -144,39 +374,232 @@ nav ul li a:hover {
     </section>
     <section id="Sobre" class="seçao3">
         <h1>Sobre mim</h1>
-        <img src="./assets/fotper.png" alt="foto caio" style="height: 300px;">
-        <p>Texto</p>
+        <div class="espaçoimagem">
+            <img src="./assets/fotper.png" alt="foto caio" class="imagemper">
+            <div class="espaçotexto">
+                <p>Sou desenvolvedor com interesse principalmente no backend. Iniciei na área em 2021 e desde então tenho participado de projetos que envolvem as mais diversas tecnologias e escopos, atuando tanto no backend quanto no frontend, bem como, no planejamento de projetos, gerenciamento de equipes e na comunicação direta com os clientes.</p>
+                <p>Gosto de me aprofundar em temas relacionados a planejamento de projetos e segurança da informação. Sou fluente em inglês e espanhol, e nível básico em francês.</p>
+            </div>
+        </div>
     </section>
     <section id="ProjetosA" class="seçao4">
         <h1>Projetos Acadêmicos</h1>
-        <div class="projeto-1">
-            <img src="./assets/imagemprojeto1.png" alt="foto caio" style="height: 300px;">
-            <div class="botoes-projeto">
-                <button class="botoesindividuais"><a>Repositório</a></button>
-                <button class="botoesindividuais" onclick="mostrarDescricao(1)">Descrição</button>
+        <div class="caroselcont">
+            <div class="caroselslide active">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto1.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/Equipe-01-DSM-2021/projeto-integrador-2021-1" style="text-decoration: none;">Repositório</a></button>
+                            <!-- <button class="botoesindividuais" onclick="mostrarDescricao(1)">Descrição</button> -->
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto análise de dados eleitorais</p>
+                        <p id="projeto-2" class="descricao">O objetivo deste projeto era proporcionar ao cliente um site de análise de dados com a exibição de estatísticas do eleitorado localizado dentro de sua cobertura no Estado de São Paulo, podendo obter diversas características, como gráficos e tabelas de estado civil, escolaridade e faixa etária, além de informações sobre renda e evolução na quantidade de eleitores, tanto no âmbito municipal (de cada cidade) quanto macro-regiões, como o Vale do Paraíba.</p>
+                        <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram em relação ao planejamento do escopo, design de alguns wireframes e principalmente na criação de algumas filtragens de dados utilizando a lib pandas.</p>
+                    </div>
+                </div>
             </div>
-            <p id="projeto-1" class="descricao">Projeto análise de dados eleitorais</p>
-            <p id="projeto-2" class="descricao">O objetivo deste projeto era proporcionar ao cliente um site de análise de dados com a exibição de estatísticas do eleitorado localizado dentro de sua cobertura no Estado de São Paulo, podendo obter diversas características, como gráficos e tabelas de estado civil, escolaridade e faixa etária, além de informações sobre renda e evolução na quantidade de eleitores, tanto no âmbito municipal (de cada cidade) quanto macro-regiões, como o Vale do Paraíba.</p>
-            <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram em relação ao planejamento do escopo, design de alguns wireframes e principalmente na criação de algumas filtragens de dados utilizando a lib pandas.</p>
+            <div class="caroselslide">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto análise de imagens satélite</p>
+                        <p id="projeto-2" class="descricao">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
+                        <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caroselslide">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto3.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/The-Bugger-Ducks/help-duck-documentation" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto helpdesk para gerenciamento de chamados</p>
+                        <p id="projeto-2" class="descricao">Para atender as demandas do cliente por um sistema que abrange 3 tipos de usuário, cada um com sua responsabilidade, focado em suporte para problemas diversos, relacionados principlamente, à área de tecnologia de maneira que o usuário comum possa abrir chamados, o usuário suporte possa manter e resolver os chamados e o usuário administrador possa criar usuários e também ter acesso à relatórios sobre o sistema. Há também um banco de soluções já conhecidas onde qualquer usuário pode pesquisar para facilitar a resolução de seu problema.</p>
+                        <p id="projeto-3" class="descricao">Minhas contribuições pessoais foram acerca do serviço de backend implementando as regras de negócio relacionadas aos diferentes tipos de users.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="caroselslide">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto4.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/Equipe-Ace/Ace-documentation" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto gerenciador de parcelas e finanças</p>
+                        <p id="projeto-2" class="descricao">Este foi um sistema criado para gerenciar o ciclo de vida de parcelas e serviços 
+                            havendo também, relatórios e análises acerca dos pagamentos dentre outras coisas. São dois tipos de usuários, um do tipo comercial
+                            que fará o cadastro de clientes e suas parcelas de acordo com os serviços relacionados, e o outro, do tipo financeiro, fica encarregado
+                            de analisar o ciclo de vida das parcelas através da apresentação dos dados e de relatórios.
+                        </p>
+                        <p id="projeto-3" class="descricao">Neste projeto atuei diretamente em todas as áreas, como PO, master e desenvolvedor front e back
+                            identificando e aplicando as regras de negócio, monitorando e direcionando o time
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caroselcontrols">
+                <button id="prevBtn">Anterior</button>
+                <button id="nextBtn">Próximo</button>
+              </div>
         </div>
     </section>
     <section id="ProjetosP" class="seçao5">
-        <h1>Projetos Pessoais</h1>
+       <h1>Projetos Pessoais</h1>
+        <div class="caroselcont2">
+            <div class="caroselslide2 active">
+                <div class="projeto-2">
+                    <div class="esqprojacad2">
+                        <img src="./assets/imagemprojeto1.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto2">
+                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-01-DSM-2021/projeto-integrador-2021-1" style="text-decoration: none;">Repositório</a></button>
+                            <!-- <button class="botoesindividuais" onclick="mostrarDescricao(1)">Descrição</button> -->
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad2">
+                        <p id="projeto-1" class="descricao2">Projeto análise de dados eleitorais</p>
+                        <p id="projeto-2" class="descricao2">O objetivo deste projeto era proporcionar ao cliente um site de análise de dados com a exibição de estatísticas do eleitorado localizado dentro de sua cobertura no Estado de São Paulo, podendo obter diversas características, como gráficos e tabelas de estado civil, escolaridade e faixa etária, além de informações sobre renda e evolução na quantidade de eleitores, tanto no âmbito municipal (de cada cidade) quanto macro-regiões, como o Vale do Paraíba.</p>
+                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram em relação ao planejamento do escopo, design de alguns wireframes e principalmente na criação de algumas filtragens de dados utilizando a lib pandas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="caroselslide2">
+                <div class="projeto-2">
+                    <div class="esqprojacad2">
+                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto2">
+                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad2">
+                        <p id="projeto-1" class="descricao2">Projeto análise de imagens satélite</p>
+                        <p id="projeto-2" class="descricao2">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
+                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caroselslide2">
+                <div class="projeto-2">
+                    <div class="esqprojacad2">
+                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto2">
+                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad2">
+                        <p id="projeto-1" class="descricao2">Projeto 3</p>
+                        <p id="projeto-2" class="descricao2">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
+                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="caroselslide2">
+                <div class="projeto-2">
+                    <div class="esqprojacad2">
+                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto2">
+                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad2">
+                        <p id="projeto-1" class="descricao2">Projeto 4</p>
+                        <p id="projeto-2" class="descricao2">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
+                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caroselcontrols2">
+                <button id="prevBtn2">Anterior</button>
+                <button id="nextBtn2">Próximo</button>
+              </div>
+        </div>
     </section>
 
     <section id="Contato" class="seçao6">
-        <h3>Contato</h3>
+        <h1>Contato</h1>
     </section>
 
-    <!-- <script>
-        function mostrarDescricao(id) {
-            let descricao = document.getElementById("projeto-" + id);
-            if (descricao.style.display === "block") {
-                descricao.style.display = "none";
-            } else {
-                descricao.style.display = "block";
-            }
-        }
-    </script> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.caroselslide');
+        let currentSlide = 0;
+
+        const showSlide = (index) => {
+            slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+            });
+        };
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        // Exibir o primeiro slide ao carregar a página
+        showSlide(currentSlide);
+        });
+
+        document.addEventListener2('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.caroselslide2');
+        let currentSlide = 0;
+
+        const showSlide = (index) => {
+            slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+            });
+        };
+
+        document.getElementById('prevBtn2').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        document.getElementById('nextBtn2').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        // Exibir o primeiro slide ao carregar a página
+        showSlide(currentSlide);
+        });
+    </script>
 </body>
 </html>
