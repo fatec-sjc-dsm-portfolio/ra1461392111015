@@ -33,6 +33,10 @@
         font-family: 'Alegreya Sans';
     }
 
+    h1 {
+        font-size: 32px;
+    }
+
     p {
         font-family: 'Alegreya Sans';
         font-size: 20px;
@@ -78,7 +82,7 @@
         /* SEÇÃO 2 */
 
         .seçao2{
-            height: 300px;
+            height: 400px;
             padding: 40px;
             text-align: left;
             padding-top: 100px;
@@ -100,7 +104,7 @@
 
         .seçao3{
             margin-top: 50px;
-            height: 600px;
+            height: 700px;
             text-align: center;
             /* display: flex;
             flex-direction: column;
@@ -138,7 +142,7 @@
         /* SEÇÃO 4 */
 
         .seçao4{
-            
+            height: 600px;
             padding: 40px;
             text-align: center;
             /* display: flex;
@@ -244,7 +248,8 @@
         /* SEÇÃO 5 */
 
         .seçao5 {
-            height: 600px;
+            margin-top: 100px;
+            height: 700px;
             padding: 40px;
             text-align: center;
         }
@@ -340,12 +345,20 @@
         /* SEÇÃO 6 */
 
         .seçao6{
-            height: 600px;
+            margin-top: -200px;
+            height: 300px;
             padding: 40px;
             text-align: center;
             /* display: flex;
             flex-direction: column;
             align-items: center; */
+        }
+
+        .contatoinfo {
+            font-size: 20px;
+            text-decoration: none;
+            color: #0CA3D5;
+            padding-top: 20px;
         }
 
         
@@ -362,7 +375,7 @@
                 <ul>
                     <li><a href="#Sobre">Sobre mim</a></li>
                     <li><a href="#ProjetosA">Projetos acadêmicos</a></li>
-                    <li><a href="#ProjetosP">Projetos Pessoais</a></li>
+                    <li><a href="#ProjetosP">Projetos Profissionais</a></li>
                     <li><a href="#Contato">Contato</a></li>
                 </ul>
             </nav>
@@ -461,6 +474,54 @@
                 </div>
             </div>
 
+            <div class="caroselslide">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto6.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/CloudSparkTeam/documentation" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto Análise de imagens de nuvens com IA</p>
+                        <p id="projeto-2" class="descricao">O objetivo desse projeto foi trabalhar na criação de uma IA que fosse
+                            capaz de identificar focos de nuvens em imagens de satélites, a partir de uma API do inpe. Desta forma, 
+                            seria possível o download dessas imagens com as marcações feitas pela ia para uma futura análise mais detalhada.
+                        </p>
+                        <p id="projeto-3" class="descricao">Neste projeto participei principalmente da elaboração de lógica do frontend e da
+                            utilização de rotas no backend fazendo a conexão entre os serviços, atuei também como PO e apliquei diversas técnicas
+                            de gestão de time e projeto. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caroselslide">
+                <div class="projeto-1">
+                    <div class="esqprojacad">
+                        <img src="./assets/imagemprojeto5.png" alt="foto caio" style="height: 300px;">
+                        <div class="botoes-projeto">
+                            <button class="botoesindividuais"><a href="https://github.com/DeskData-Api/Documentacao" style="text-decoration: none;">Repositório</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="dirprojacad">
+                        <p id="projeto-1" class="descricao">Projeto automação de tarefas com PLN</p>
+                        <p id="projeto-2" class="descricao">Este foi um projeto elaborado para facilitar a tomada de decisões de negócio
+                            a partir da análise de dados gerados por serviços de atendimento a clientes. Para isso, foi construído uma IA
+                            que trabalhava com essas informações identificando padrões e gerando gráficos para insights apresentando diversas
+                            análises realizadas com técnicas de linguagem natural.
+                        </p>
+                        <p id="projeto-3" class="descricao">Neste projeto participei como PO aplicando técnicas de gerenciamento de projeto e 
+                            de equipe. Atuei também no backend desenvolvendo a IA para algumas análises de PLN.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="caroselcontrols">
                 <button id="prevBtn">Anterior</button>
                 <button id="nextBtn">Próximo</button>
@@ -468,87 +529,47 @@
         </div>
     </section>
     <section id="ProjetosP" class="seçao5">
-       <h1>Projetos Pessoais</h1>
+       <h1>Projetos Profissionais</h1>
         <div class="caroselcont2">
             <div class="caroselslide2 active">
                 <div class="projeto-2">
                     <div class="esqprojacad2">
-                        <img src="./assets/imagemprojeto1.png" alt="foto caio" style="height: 300px;">
+                        <img src="./assets/imagemprojetop.png" alt="foto caio" style="height: 300px;">
                         <div class="botoes-projeto2">
-                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-01-DSM-2021/projeto-integrador-2021-1" style="text-decoration: none;">Repositório</a></button>
+                            <!-- <button class="botoesindividuais2"><a href="https://github.com/Equipe-01-DSM-2021/projeto-integrador-2021-1" style="text-decoration: none;">Repositório</a></button> -->
                             <!-- <button class="botoesindividuais" onclick="mostrarDescricao(1)">Descrição</button> -->
                         </div>
                     </div>
 
                     <div class="dirprojacad2">
-                        <p id="projeto-1" class="descricao2">Projeto análise de dados eleitorais</p>
-                        <p id="projeto-2" class="descricao2">O objetivo deste projeto era proporcionar ao cliente um site de análise de dados com a exibição de estatísticas do eleitorado localizado dentro de sua cobertura no Estado de São Paulo, podendo obter diversas características, como gráficos e tabelas de estado civil, escolaridade e faixa etária, além de informações sobre renda e evolução na quantidade de eleitores, tanto no âmbito municipal (de cada cidade) quanto macro-regiões, como o Vale do Paraíba.</p>
-                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram em relação ao planejamento do escopo, design de alguns wireframes e principalmente na criação de algumas filtragens de dados utilizando a lib pandas.</p>
+                        <p id="projeto-1" class="descricao2">Projeto Portal Carreiras</p>
+                        <p id="projeto-2" class="descricao2">
+                            O objetivo deste projeto é criar uma plataforma para alunos fatec, que agrupa vagas de emprego de diversas áreas
+                            e de diferentes sites numa única interface de acordo com as preferências escolhidas, facilitando a busca por 
+                            trabalho e direcionando o usuário direto para a vaga de interesse.
+                        </p>
+                        <p id="projeto-3" class="descricao2">
+                            Neste projeto atuei no backend fazendo a manutenção do serviço de busca e raspagem de dados, garantindo que o mesmo
+                            funcionasse como o esperado e aplicando as melhorias necessárias.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="caroselslide2">
-                <div class="projeto-2">
-                    <div class="esqprojacad2">
-                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
-                        <div class="botoes-projeto2">
-                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
-                            
-                        </div>
-                    </div>
+            
 
-                    <div class="dirprojacad2">
-                        <p id="projeto-1" class="descricao2">Projeto análise de imagens satélite</p>
-                        <p id="projeto-2" class="descricao2">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
-                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="caroselslide2">
-                <div class="projeto-2">
-                    <div class="esqprojacad2">
-                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
-                        <div class="botoes-projeto2">
-                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
-                            
-                        </div>
-                    </div>
-
-                    <div class="dirprojacad2">
-                        <p id="projeto-1" class="descricao2">Projeto 3</p>
-                        <p id="projeto-2" class="descricao2">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
-                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="caroselslide2">
-                <div class="projeto-2">
-                    <div class="esqprojacad2">
-                        <img src="./assets/imagemprojeto2.png" alt="foto caio" style="height: 300px;">
-                        <div class="botoes-projeto2">
-                            <button class="botoesindividuais2"><a href="https://github.com/Equipe-Polaris-DSM-2021/docs" style="text-decoration: none;">Repositório</a></button>
-                            
-                        </div>
-                    </div>
-
-                    <div class="dirprojacad2">
-                        <p id="projeto-1" class="descricao2">Projeto 4</p>
-                        <p id="projeto-2" class="descricao2">Esse é um sistema elaborado para permitir a visualização de imagens de satélites disponibilizadas por uma API pública. O sistema permite a troca de satélites bem como o uso de diferentes filtros, download das imagens e a utilização de tiles dinâmicos, também é possível exibir as imagens em suas cores naturais. A imagens são buscadas após a definição de uma área de busca, em que se é escolhida a área de interesse, a data e os satélites desejados.</p>
-                        <p id="projeto-3" class="descricao2">Minhas contribuições pessoais foram principalmente no planejamento de requisitos do projeto e na construção de rotas no backend.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="caroselcontrols2">
+            <!-- <div class="caroselcontrols2">
                 <button id="prevBtn2">Anterior</button>
                 <button id="nextBtn2">Próximo</button>
-              </div>
+              </div> -->
         </div>
     </section>
 
     <section id="Contato" class="seçao6">
         <h1>Contato</h1>
+        <div>
+            <a href="https://github.com/caiovitordias1"><h2 class="contatoinfo">Github</h2></a>
+            <a href="https://linkedin.com/in/caio-vitor-c1"><h2 class="contatoinfo">Linkedin</h2></a>
+        </div>
     </section>
 
 
@@ -577,29 +598,7 @@
         showSlide(currentSlide);
         });
 
-        document.addEventListener2('DOMContentLoaded', () => {
-        const slides = document.querySelectorAll('.caroselslide2');
-        let currentSlide = 0;
-
-        const showSlide = (index) => {
-            slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-            });
-        };
-
-        document.getElementById('prevBtn2').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        });
-
-        document.getElementById('nextBtn2').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        });
-
-        // Exibir o primeiro slide ao carregar a página
-        showSlide(currentSlide);
-        });
+        
     </script>
 </body>
 </html>
